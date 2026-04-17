@@ -42,7 +42,7 @@ function LeistungenPage() {
 
       <section className="mx-auto w-full max-w-6xl px-4 py-16 md:px-6">
         <div className="grid gap-6 md:grid-cols-2">
-          {services.map(({ slug, title, description, icon: Icon }, i) => (
+          {services.map(({ slug, title, description, icon: Icon }) => (
             <article
               key={slug}
               id={slug}
@@ -52,12 +52,7 @@ function LeistungenPage() {
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent text-accent-foreground">
                   <Icon className="h-6 w-6" aria-hidden />
                 </div>
-                <div>
-                  <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                    Leistung {String(i + 1).padStart(2, "0")}
-                  </div>
-                  <h2 className="mt-1 text-xl font-semibold text-foreground">{title}</h2>
-                </div>
+                <h2 className="mt-2 text-xl font-semibold text-foreground">{title}</h2>
               </div>
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
                 {description}
