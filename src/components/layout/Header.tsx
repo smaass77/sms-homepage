@@ -1,7 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { Menu, X, Sun } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import smsLogo from "@/assets/sms-logo.png";
 
 const navItems = [
   { to: "/", label: "Start" },
@@ -19,19 +20,17 @@ export function Header() {
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-4 md:px-6">
         <Link
           to="/"
-          className="flex items-center gap-2 text-primary"
+          className="flex items-center"
           onClick={() => setOpen(false)}
           aria-label="Stefan Maaß Solaranlagen — Startseite"
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-primary-foreground">
-            <Sun className="h-5 w-5" aria-hidden />
-          </span>
-          <span className="flex flex-col leading-tight">
-            <span className="text-sm font-semibold tracking-tight">Stefan Maaß</span>
-            <span className="text-[11px] uppercase tracking-wider text-muted-foreground">
-              Solaranlagen SMS
-            </span>
-          </span>
+          <img
+            src={smsLogo}
+            alt="Stefan Maaß Solaranlagen"
+            className="h-9 w-auto md:h-10"
+            loading="eager"
+            decoding="async"
+          />
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex" aria-label="Hauptnavigation">

@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
-import { Sun } from "lucide-react";
 import { company } from "@/data/company";
 import { services } from "@/data/services";
+import smsLogo from "@/assets/sms-logo.png";
 
 export function Footer() {
   return (
@@ -9,16 +9,14 @@ export function Footer() {
       <div className="mx-auto w-full max-w-6xl px-4 py-12 md:px-6">
         <div className="grid gap-10 md:grid-cols-4">
           <div>
-            <Link to="/" className="flex items-center gap-2 text-primary" aria-label="Zur Startseite">
-              <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-primary-foreground">
-                <Sun className="h-5 w-5" aria-hidden />
-              </span>
-              <span className="flex flex-col leading-tight">
-                <span className="text-sm font-semibold">Stefan Maaß</span>
-                <span className="text-[11px] uppercase tracking-wider text-muted-foreground">
-                  Solaranlagen SMS
-                </span>
-              </span>
+            <Link to="/" className="inline-flex items-center" aria-label="Zur Startseite">
+              <img
+                src={smsLogo}
+                alt="Stefan Maaß Solaranlagen"
+                className="h-10 w-auto"
+                loading="lazy"
+                decoding="async"
+              />
             </Link>
             <p className="mt-4 text-sm text-muted-foreground">
               Spezialist für gewerbliche Photovoltaik-Großanlagen seit 2009.
