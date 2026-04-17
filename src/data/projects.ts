@@ -1,0 +1,45 @@
+export type Project = {
+  name: string;
+  location: string;
+  kwp: number;
+  year: string;
+  modules: number;
+  yieldKwh: number;
+};
+
+export const projects: Project[] = [
+  { name: "maxi-garagen", location: "Darmstadt", kwp: 475, year: "2020", modules: 1378, yieldKwh: 400000 },
+  { name: "Seibel & Weyer", location: "Bottrop", kwp: 545, year: "2020", modules: 1760, yieldKwh: 310000 },
+  { name: "maxi-garagen", location: "Gelsenkirchen", kwp: 369, year: "2019", modules: 1248, yieldKwh: 310000 },
+  { name: "maxi-garagen", location: "Schwäbisch Hall", kwp: 499, year: "2019", modules: 1719, yieldKwh: 425000 },
+  { name: "maxi-garagen", location: "Dorsten", kwp: 345, year: "2018", modules: 1231, yieldKwh: 295000 },
+  { name: "maxi-garagen", location: "Holzwickede", kwp: 496, year: "2018", modules: 1772, yieldKwh: 425500 },
+  { name: "Autohaus Cramer", location: "Wesel", kwp: 188, year: "2018", modules: 682, yieldKwh: 177000 },
+  { name: "Superfly", location: "Duisburg", kwp: 759, year: "2015/2018", modules: 2830, yieldKwh: 620000 },
+  { name: "maxi-garagen", location: "Essen", kwp: 538, year: "2016", modules: 2030, yieldKwh: 470000 },
+  { name: "EDEKA-Komp", location: "Wesel", kwp: 85, year: "2015", modules: 333, yieldKwh: 73000 },
+  { name: "STAR-Piping", location: "Wesel", kwp: 824, year: "2014", modules: 3294, yieldKwh: 782800 },
+  { name: "Schornacker", location: "Wesel", kwp: 290, year: "2014", modules: 1135, yieldKwh: 255000 },
+  { name: "Gewerbepark II", location: "Schermbeck", kwp: 1075, year: "2013", modules: 4480, yieldKwh: 900000 },
+  { name: "Spedition", location: "Hünxe", kwp: 424, year: "2013", modules: 2232, yieldKwh: 415520 },
+  { name: "Medienpark", location: "Moers", kwp: 157, year: "2009/2012", modules: 1708, yieldKwh: 135000 },
+  { name: "Parkdeck", location: "Wesel", kwp: 549, year: "2011", modules: 2391, yieldKwh: 520000 },
+];
+
+export const projectStats = {
+  count: projects.length,
+  totalKwp: projects.reduce((s, p) => s + p.kwp, 0),
+  totalYieldKwh: projects.reduce((s, p) => s + p.yieldKwh, 0),
+};
+
+export const sizeClass = (kwp: number): "klein" | "mittel" | "gross" => {
+  if (kwp <= 250) return "klein";
+  if (kwp <= 500) return "mittel";
+  return "gross";
+};
+
+export const sizeClassLabel: Record<"klein" | "mittel" | "gross", string> = {
+  klein: "bis 250 kWp",
+  mittel: "250–500 kWp",
+  gross: "500+ kWp",
+};
