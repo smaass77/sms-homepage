@@ -3,6 +3,7 @@ import { company } from "@/data/company";
 import { services } from "@/data/services";
 import smsLogo from "@/assets/sms-logo.png";
 import bswLogo from "@/assets/bsw-logo.jpg";
+import reactEuLogo from "@/assets/react-eu-logo.jpg";
 
 export function Footer() {
   return (
@@ -80,11 +81,14 @@ export function Footer() {
                 <span>Mitglied im Bundesverband Solarwirtschaft</span>
               </div>
               <div className="flex items-center gap-3">
-                <div
-                  className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg border border-border bg-background text-[10px] font-semibold uppercase text-muted-foreground"
-                  aria-label="Logo REACT-EU / EU-Förderung (Platzhalter)"
-                >
-                  EU
+                <div className="flex h-12 w-20 shrink-0 items-center justify-center rounded-lg border border-border bg-background p-1">
+                  <img
+                    src={reactEuLogo}
+                    alt="REACT-EU – Europäischer Fonds für regionale Entwicklung"
+                    className="h-full w-full object-contain"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
                 <span>Gefördert durch REACT-EU / Europäische Union</span>
               </div>
