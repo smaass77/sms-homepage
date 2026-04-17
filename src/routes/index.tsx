@@ -158,7 +158,7 @@ function Index() {
                 Ausgewählte Referenzen
               </h2>
               <p className="mt-3 max-w-2xl text-muted-foreground">
-                Eine Auswahl unserer größten Projekte – vom Logistikdach bis
+                Eine Auswahl unserer Projekte – vom Logistikdach bis
                 zum Gewerbepark.
               </p>
             </div>
