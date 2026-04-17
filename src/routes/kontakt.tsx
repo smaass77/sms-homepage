@@ -34,7 +34,7 @@ const contactSchema = z.object({
     .trim()
     .min(10, "Bitte beschreiben Sie kurz Ihr Vorhaben.")
     .max(2000, "Maximal 2000 Zeichen."),
-  consent: z.literal(true, { errorMap: () => ({ message: "Bitte stimmen Sie der Datenschutzerklärung zu." }) }),
+  consent: z.literal(true, { message: "Bitte stimmen Sie der Datenschutzerklärung zu." }),
   // honeypot
   website: z.string().max(0).optional(),
 });
