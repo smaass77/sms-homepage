@@ -1,3 +1,5 @@
+import medienparkMoers from "@/assets/referenz-medienpark.jpg";
+
 export type Project = {
   name: string;
   location: string;
@@ -5,6 +7,7 @@ export type Project = {
   year: string;
   modules: number;
   yieldKwh: number;
+  image?: string;
 };
 
 export const projects: Project[] = [
@@ -22,7 +25,7 @@ export const projects: Project[] = [
   { name: "Schornacker", location: "Wesel", kwp: 290, year: "2014", modules: 1135, yieldKwh: 255000 },
   { name: "Gewerbepark II", location: "Schermbeck", kwp: 1075, year: "2013", modules: 4480, yieldKwh: 900000 },
   { name: "Spedition", location: "Hünxe", kwp: 424, year: "2013", modules: 2232, yieldKwh: 415520 },
-  { name: "Medienpark", location: "Moers", kwp: 157, year: "2009/2012", modules: 1708, yieldKwh: 135000 },
+  { name: "Medienpark", location: "Moers", kwp: 157, year: "2009/2012", modules: 1708, yieldKwh: 135000, image: medienparkMoers },
   { name: "Parkdeck", location: "Wesel", kwp: 549, year: "2011", modules: 2391, yieldKwh: 520000 },
 ];
 
