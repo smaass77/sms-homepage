@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { company } from "@/data/company";
 import { services } from "@/data/services";
 import smsLogo from "@/assets/sms-logo.png";
+import bswLogo from "@/assets/bsw-logo.jpg";
 
 export function Footer() {
   return (
@@ -67,11 +68,14 @@ export function Footer() {
             <h2 className="text-sm font-semibold text-foreground">Mitgliedschaften & Förderung</h2>
             <div className="mt-3 space-y-3 text-sm text-muted-foreground">
               <div className="flex items-center gap-3">
-                <div
-                  className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg border border-border bg-background text-[10px] font-semibold uppercase text-muted-foreground"
-                  aria-label="Logo Bundesverband Solarwirtschaft (Platzhalter)"
-                >
-                  BSW
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg border border-border bg-background p-1">
+                  <img
+                    src={bswLogo}
+                    alt="Bundesverband Solarwirtschaft Logo"
+                    className="h-full w-full object-contain"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
                 <span>Mitglied im Bundesverband Solarwirtschaft</span>
               </div>
