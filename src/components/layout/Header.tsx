@@ -1,7 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { Menu, X, Sun } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import smsLogo from "@/assets/sms-logo.png";
 
 const navItems = [
   { to: "/", label: "Start" },
