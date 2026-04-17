@@ -38,8 +38,6 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   const highlights = [...projects].sort((a, b) => b.kwp - a.kwp).slice(0, 4);
-  const totalMwp = (projectStats.totalKwp / 1000).toFixed(1).replace(".", ",");
-  const totalMwh = Math.round(projectStats.totalYieldKwh / 1000);
 
   return (
     <>
