@@ -6,13 +6,24 @@ const fmt = new Intl.NumberFormat("de-DE");
 export function ProjectCard({ project }: { project: Project }) {
   return (
     <article className="flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-md">
-      <div
-        className="relative flex aspect-[4/3] items-center justify-center bg-gradient-to-br from-primary/10 via-muted to-accent/10"
-        role="img"
-        aria-label={`Bild-Platzhalter für PV-Anlage ${project.name} in ${project.location}`}
-      >
-        <Sun className="h-10 w-10 text-primary/40" aria-hidden />
-        <span className="absolute right-3 top-3 rounded-full bg-primary px-2.5 py-1 text-xs font-semibold text-primary-foreground">
+      <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-primary/10 via-muted to-accent/10">
+        {project.image ? (
+          <img
+            src={project.image}
+            alt={`Luftaufnahme der PV-Anlage ${project.name} in ${project.location}`}
+            loading="lazy"
+            className="h-full w-full object-cover"
+          />
+        ) : (
+          <div
+            className="flex h-full w-full items-center justify-center"
+            role="img"
+            aria-label={`Bild-Platzhalter für PV-Anlage ${project.name} in ${project.location}`}
+          >
+            <Sun className="h-10 w-10 text-primary/40" aria-hidden />
+          </div>
+        )}
+        <span className="absolute right-3 top-3 rounded-full bg-primary px-2.5 py-1 text-xs font-semibold text-primary-foreground shadow">
           {project.year}
         </span>
       </div>
