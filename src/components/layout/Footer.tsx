@@ -45,7 +45,8 @@ export function Footer() {
           <div>
             <h2 className="text-sm font-semibold text-foreground">Kontakt</h2>
             <address className="mt-3 space-y-1 text-sm not-italic text-muted-foreground">
-              <div>{company.legalName}</div>
+              <div>{company.shortName}</div>
+              <div>SMS – GmbH & Co. KG</div>
               <div>{company.street}</div>
               <div>
                 {company.zip} {company.city}
