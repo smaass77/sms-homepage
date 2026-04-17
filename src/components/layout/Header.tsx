@@ -12,6 +12,7 @@ const navItems = [
   { to: "/kontakt", label: "Kontakt" },
 ] as const;
 
+// SMS Header mit Firmen-Logo
 export function Header() {
   const [open, setOpen] = useState(false);
 
