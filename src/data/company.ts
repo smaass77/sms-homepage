@@ -1,3 +1,4 @@
+// Stammdaten Stefan Maaß Solaranlagen
 export const company = {
   legalName: "Stefan Maaß Solaranlagen SMS – GmbH & Co. KG",
   shortName: "Stefan Maaß Solaranlagen",
