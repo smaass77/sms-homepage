@@ -7,9 +7,7 @@ import { ProjectCard } from "@/components/sections/ProjectCard";
 import { QuoteBlock } from "@/components/sections/QuoteBlock";
 import { CTASection } from "@/components/sections/CTASection";
 import { services } from "@/data/services";
-import { projects, projectStats } from "@/data/projects";
-
-const fmt = new Intl.NumberFormat("de-DE");
+import { projects } from "@/data/projects";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -38,8 +36,6 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   const highlights = [...projects].sort((a, b) => b.kwp - a.kwp).slice(0, 4);
-  const totalMwp = (projectStats.totalKwp / 1000).toFixed(1).replace(".", ",");
-  const totalMwh = Math.round(projectStats.totalYieldKwh / 1000);
 
   return (
     <>
@@ -104,9 +100,9 @@ function Index() {
           </div>
           <StatsGrid
             stats={[
-              { value: `${projectStats.count}+`, label: "realisierte Projekte" },
-              { value: `${totalMwp} MWp`, label: "installierte Gesamtleistung" },
-              { value: `${fmt.format(totalMwh)}+ MWh`, label: "Jahresertrag" },
+              { value: "300+", label: "realisierte Projekte" },
+              { value: "50+ MWp", label: "installierte Gesamtleistung" },
+              { value: "250.000+", label: "verbaute Module" },
             ]}
           />
         </div>
