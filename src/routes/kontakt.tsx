@@ -235,7 +235,7 @@ function KontaktPage() {
             <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
               <iframe
                 title={`Standort ${company.city} auf OpenStreetMap`}
-                src="https://www.openstreetmap.org/export/embed.html?bbox=6.605%2C51.660%2C6.665%2C51.690&layer=mapnik&marker=51.6748%2C6.6362"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=6.6986621%2C51.6546603%2C6.7186621%2C51.6746603&layer=mapnik&marker=51.6646603%2C6.7086621"
                 className="h-72 w-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -243,7 +243,7 @@ function KontaktPage() {
               <div className="px-4 py-2 text-xs text-muted-foreground">
                 Karte:{" "}
                 <a
-                  href="https://www.openstreetmap.org/?mlat=51.6748&mlon=6.6362#map=15/51.6748/6.6362"
+                  href="https://www.openstreetmap.org/?mlat=51.6646603&mlon=6.7086621#map=17/51.6646603/6.7086621"
                   className="text-primary hover:underline"
                   target="_blank"
                   rel="noreferrer"
