@@ -10,6 +10,7 @@ import cramerWesel from "@/assets/referenz-cramer.jpg";
 import maxiHolzwickede from "@/assets/referenz-holzwickede.jpg";
 import maxiDorsten from "@/assets/referenz-dorsten.jpg";
 import maxiSchwaebischHall from "@/assets/referenz-schwaebisch-hall.jpg";
+import maxiGelsenkirchen from "@/assets/referenz-gelsenkirchen.jpg";
 
 export type Project = {
   name: string;
@@ -24,7 +25,7 @@ export type Project = {
 export const projects: Project[] = [
   { name: "maxi-garagen", location: "Darmstadt", kwp: 475, year: "2020", modules: 1378, yieldKwh: 400000 },
   { name: "Seibel & Weyer", location: "Bottrop", kwp: 545, year: "2020", modules: 1760, yieldKwh: 310000 },
-  { name: "maxi-garagen", location: "Gelsenkirchen", kwp: 369, year: "2019", modules: 1248, yieldKwh: 310000 },
+  { name: "maxi-garagen", location: "Gelsenkirchen", kwp: 369, year: "2019", modules: 1248, yieldKwh: 310000, image: maxiGelsenkirchen },
   { name: "maxi-garagen", location: "Schwäbisch Hall", kwp: 499, year: "2019", modules: 1719, yieldKwh: 425000, image: maxiSchwaebischHall },
   { name: "maxi-garagen", location: "Dorsten", kwp: 345, year: "2018", modules: 1231, yieldKwh: 295000, image: maxiDorsten },
   { name: "maxi-garagen", location: "Holzwickede", kwp: 496, year: "2018", modules: 1772, yieldKwh: 425500, image: maxiHolzwickede },
