@@ -5,6 +5,7 @@ import parkdeckWesel from "@/assets/referenz-parkdeck.jpg";
 import superflyDuisburg from "@/assets/referenz-superfly.jpg";
 import maxiEssen from "@/assets/referenz-essen.jpg";
 import starPipingWesel from "@/assets/referenz-star-piping.jpg";
+import edekaWesel from "@/assets/referenz-edeka.jpg";
 
 export type Project = {
   name: string;
@@ -26,7 +27,7 @@ export const projects: Project[] = [
   { name: "Autohaus Cramer", location: "Wesel", kwp: 188, year: "2018", modules: 682, yieldKwh: 177000 },
   { name: "Superfly", location: "Duisburg", kwp: 759, year: "2015/2018", modules: 2830, yieldKwh: 620000, image: superflyDuisburg },
   { name: "maxi-garagen", location: "Essen", kwp: 538, year: "2016", modules: 2030, yieldKwh: 470000, image: maxiEssen },
-  { name: "EDEKA-Komp", location: "Wesel", kwp: 85, year: "2015", modules: 333, yieldKwh: 73000 },
+  { name: "EDEKA-Komp", location: "Wesel", kwp: 85, year: "2015", modules: 333, yieldKwh: 73000, image: edekaWesel },
   { name: "STAR-Piping", location: "Wesel", kwp: 824, year: "2014", modules: 3294, yieldKwh: 782800, image: starPipingWesel },
   { name: "Schornacker", location: "Wesel", kwp: 290, year: "2014", modules: 1135, yieldKwh: 255000, image: schornackerWesel },
   { name: "Gewerbepark II", location: "Schermbeck", kwp: 1075, year: "2013", modules: 4480, yieldKwh: 900000 },
