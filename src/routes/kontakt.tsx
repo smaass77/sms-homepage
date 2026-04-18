@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { z } from "zod";
-import { Mail, Phone, MapPin, Printer, CheckCircle2, AlertCircle } from "lucide-react";
+import { Mail, Phone, MapPin, CheckCircle2, AlertCircle } from "lucide-react";
 import { company } from "@/data/company";
 import { cn } from "@/lib/utils";
 
