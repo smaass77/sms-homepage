@@ -21,7 +21,7 @@ export function Footer() {
               />
             </Link>
             <p className="mt-4 text-sm text-muted-foreground">
-              Spezialist für gewerbliche Photovoltaik-Großanlagen seit 2009.
+              Spezialist für gewerbliche Photovoltaik-Großanlagen seit 2006.
             </p>
           </div>
 
