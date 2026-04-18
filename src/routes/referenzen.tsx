@@ -68,25 +68,21 @@ function ReferenzenPage() {
           <dl className="mt-10 grid gap-4 sm:grid-cols-3">
             <div className="rounded-2xl border border-border bg-card p-5 shadow-sm">
               <dt className="text-xs uppercase tracking-wider text-muted-foreground">
-                Projekte
+                realisierte Projekte
               </dt>
-              <dd className="mt-1 text-2xl font-bold text-primary">
-                {projectStats.count}
-              </dd>
+              <dd className="mt-1 text-2xl font-bold text-primary">300+</dd>
             </div>
             <div className="rounded-2xl border border-border bg-card p-5 shadow-sm">
               <dt className="text-xs uppercase tracking-wider text-muted-foreground">
-                Installierte Leistung
+                installierte Gesamtleistung
               </dt>
-              <dd className="mt-1 text-2xl font-bold text-primary">{totalMwp} MWp</dd>
+              <dd className="mt-1 text-2xl font-bold text-primary">50+ MWp</dd>
             </div>
             <div className="rounded-2xl border border-border bg-card p-5 shadow-sm">
               <dt className="text-xs uppercase tracking-wider text-muted-foreground">
-                Jahresertrag
+                verbaute Module
               </dt>
-              <dd className="mt-1 text-2xl font-bold text-primary">
-                {fmt.format(totalMwh)} MWh
-              </dd>
+              <dd className="mt-1 text-2xl font-bold text-primary">250.000+</dd>
             </div>
           </dl>
         </div>
