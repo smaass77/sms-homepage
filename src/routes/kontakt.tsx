@@ -211,17 +211,9 @@ function KontaktPage() {
                 </div>
                 <div className="flex items-start gap-2">
                   <Phone className="mt-0.5 h-4 w-4 text-primary" aria-hidden />
-                  <span>
-                    <a href={`tel:${company.phone.replace(/[^+\d]/g, "")}`} className="hover:text-foreground">
-                      {company.phone}
-                    </a>
-                    <br />
-                    <span className="text-xs">Alt: {company.phoneAlt}</span>
-                  </span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <Printer className="mt-0.5 h-4 w-4 text-primary" aria-hidden />
-                  <span>{company.fax}</span>
+                  <a href={`tel:${company.phone.replace(/[^+\d]/g, "")}`} className="hover:text-foreground">
+                    {company.phone}
+                  </a>
                 </div>
                 <div className="flex items-start gap-2">
                   <Mail className="mt-0.5 h-4 w-4 text-primary" aria-hidden />
