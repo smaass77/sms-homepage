@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import heroImage from "@/assets/hero-solar.jpg";
+import heroImage from "@/assets/referenz-star-piping.jpg";
 import { ArrowRight } from "lucide-react";
 import { StatsGrid } from "@/components/sections/StatsGrid";
 import { ServiceCard } from "@/components/sections/ServiceCard";
