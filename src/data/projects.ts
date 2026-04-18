@@ -7,6 +7,7 @@ import maxiEssen from "@/assets/referenz-essen.jpg";
 import starPipingWesel from "@/assets/referenz-star-piping.jpg";
 import edekaWesel from "@/assets/referenz-edeka.jpg";
 import cramerWesel from "@/assets/referenz-cramer.jpg";
+import maxiHolzwickede from "@/assets/referenz-holzwickede.jpg";
 
 export type Project = {
   name: string;
@@ -24,7 +25,7 @@ export const projects: Project[] = [
   { name: "maxi-garagen", location: "Gelsenkirchen", kwp: 369, year: "2019", modules: 1248, yieldKwh: 310000 },
   { name: "maxi-garagen", location: "Schwäbisch Hall", kwp: 499, year: "2019", modules: 1719, yieldKwh: 425000 },
   { name: "maxi-garagen", location: "Dorsten", kwp: 345, year: "2018", modules: 1231, yieldKwh: 295000 },
-  { name: "maxi-garagen", location: "Holzwickede", kwp: 496, year: "2018", modules: 1772, yieldKwh: 425500 },
+  { name: "maxi-garagen", location: "Holzwickede", kwp: 496, year: "2018", modules: 1772, yieldKwh: 425500, image: maxiHolzwickede },
   { name: "Autohaus Cramer", location: "Wesel", kwp: 188, year: "2018", modules: 682, yieldKwh: 177000, image: cramerWesel },
   { name: "Superfly", location: "Duisburg", kwp: 759, year: "2015/2018", modules: 2830, yieldKwh: 620000, image: superflyDuisburg },
   { name: "maxi-garagen", location: "Essen", kwp: 538, year: "2016", modules: 2030, yieldKwh: 470000, image: maxiEssen },
