@@ -12,6 +12,7 @@ import maxiDorsten from "@/assets/referenz-dorsten.jpg";
 import maxiSchwaebischHall from "@/assets/referenz-schwaebisch-hall.jpg";
 import maxiGelsenkirchen from "@/assets/referenz-gelsenkirchen.jpg";
 import seibelWeyerBottrop from "@/assets/referenz-seibel-weyer.jpg";
+import maxiDarmstadt from "@/assets/referenz-darmstadt.jpg";
 
 export type Project = {
   name: string;
@@ -24,7 +25,7 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  { name: "maxi-garagen", location: "Darmstadt", kwp: 475, year: "2020", modules: 1378, yieldKwh: 400000 },
+  { name: "maxi-garagen", location: "Darmstadt", kwp: 475, year: "2020", modules: 1378, yieldKwh: 400000, image: maxiDarmstadt },
   { name: "Seibel & Weyer", location: "Bottrop", kwp: 545, year: "2020", modules: 1760, yieldKwh: 310000, image: seibelWeyerBottrop },
   { name: "maxi-garagen", location: "Gelsenkirchen", kwp: 369, year: "2019", modules: 1248, yieldKwh: 310000, image: maxiGelsenkirchen },
   { name: "maxi-garagen", location: "Schwäbisch Hall", kwp: 499, year: "2019", modules: 1719, yieldKwh: 425000, image: maxiSchwaebischHall },
