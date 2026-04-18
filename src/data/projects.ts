@@ -13,6 +13,7 @@ import maxiSchwaebischHall from "@/assets/referenz-schwaebisch-hall.jpg";
 import maxiGelsenkirchen from "@/assets/referenz-gelsenkirchen.jpg";
 import seibelWeyerBottrop from "@/assets/referenz-seibel-weyer.jpg";
 import maxiDarmstadt from "@/assets/referenz-darmstadt.jpg";
+import gewerbeparkIISchermbeck from "@/assets/referenz-gewerbepark-ii.jpg";
 
 export type Project = {
   name: string;
@@ -37,7 +38,7 @@ export const projects: Project[] = [
   { name: "EDEKA-Komp", location: "Wesel", kwp: 85, year: "2015", modules: 333, yieldKwh: 73000, image: edekaWesel },
   { name: "STAR-Piping", location: "Wesel", kwp: 824, year: "2014", modules: 3294, yieldKwh: 782800, image: starPipingWesel },
   { name: "Schornacker", location: "Wesel", kwp: 290, year: "2014", modules: 1135, yieldKwh: 255000, image: schornackerWesel },
-  { name: "Gewerbepark II", location: "Schermbeck", kwp: 1075, year: "2013", modules: 4480, yieldKwh: 900000 },
+  { name: "Gewerbepark II", location: "Schermbeck", kwp: 1075, year: "2013", modules: 4480, yieldKwh: 900000, image: gewerbeparkIISchermbeck },
   { name: "Spedition", location: "Hünxe", kwp: 424, year: "2013", modules: 2232, yieldKwh: 415520, image: speditionHuenxe },
   { name: "Medienpark", location: "Moers", kwp: 157, year: "2009/2012", modules: 1708, yieldKwh: 135000, image: medienparkMoers },
   { name: "Parkdeck", location: "Wesel", kwp: 549, year: "2011", modules: 2391, yieldKwh: 520000, image: parkdeckWesel },
