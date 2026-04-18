@@ -196,7 +196,11 @@ function KontaktPage() {
             <div className="rounded-2xl border border-border bg-card p-6 shadow-sm">
               <h2 className="text-lg font-semibold text-foreground">Stammdaten</h2>
               <address className="mt-4 space-y-3 text-sm not-italic text-muted-foreground">
-                <div className="font-medium text-foreground">{company.legalName}</div>
+                <div className="font-medium text-foreground">
+                  Stefan Maaß Solaranlagen
+                  <br />
+                  SMS – GmbH & Co. KG
+                </div>
                 <div className="flex items-start gap-2">
                   <MapPin className="mt-0.5 h-4 w-4 text-primary" aria-hidden />
                   <span>
