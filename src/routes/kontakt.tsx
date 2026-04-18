@@ -194,7 +194,7 @@ function KontaktPage() {
 
           <aside className="space-y-6">
             <div className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-              <h2 className="text-lg font-semibold text-foreground">Stammdaten</h2>
+              <h2 className="text-lg font-semibold text-foreground">Kontaktdaten</h2>
               <address className="mt-4 space-y-3 text-sm not-italic text-muted-foreground">
                 <div className="font-medium text-foreground">
                   Stefan Maaß Solaranlagen
