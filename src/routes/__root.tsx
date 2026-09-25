@@ -32,7 +32,7 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "Planung, Installation, Wartung und Optimierung gewerblicher Photovoltaik-Großanlagen. Über 50 realisierte Projekte – seit 2006 aus Wesel.",
+          "Planung, Installation, Wartung und Optimierung gewerblicher Photovoltaik-Großanlagen. Über 300 realisierte Projekte – seit über 20 Jahren aus Wesel.",
       },
       { name: "author", content: "Stefan Maaß Solaranlagen SMS – GmbH & Co. KG" },
       { property: "og:type", content: "website" },

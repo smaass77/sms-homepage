@@ -26,7 +26,7 @@ export function QuoteBlock({
         <figcaption className="mt-6 flex items-center gap-4">
           <div
             className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-sm font-semibold text-primary-foreground"
-            aria-label={`Portrait-Platzhalter ${author}`}
+            aria-hidden
           >
             {initials}
           </div>
