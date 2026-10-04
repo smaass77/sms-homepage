@@ -4,7 +4,7 @@ import { company } from "@/data/company";
 export const Route = createFileRoute("/impressum")({
   head: () => ({
     meta: [
-      { title: "Impressum – Stefan Maaß Solaranlagen SMS" },
+      { title: "Impressum – SMS" },
       { name: "description", content: "Impressum gemäß § 5 TMG." },
       { name: "robots", content: "noindex" },
     ],

@@ -5,7 +5,7 @@ import { CTASection } from "@/components/sections/CTASection";
 export const Route = createFileRoute("/leistungen")({
   head: () => ({
     meta: [
-      { title: "Leistungen – Stefan Maaß Solaranlagen SMS" },
+      { title: "Leistungen – SMS" },
       {
         name: "description",
         content:

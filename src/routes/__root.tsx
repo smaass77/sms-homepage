@@ -28,7 +28,7 @@ export const Route = createRootRoute({
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "theme-color", content: "#7A1F2B" },
-      { title: "Stefan Maaß Solaranlagen SMS – Gewerbliche Photovoltaik-Großanlagen" },
+      { title: "SMS – Gewerbliche Photovoltaik-Großanlagen" },
       {
         name: "description",
         content:
@@ -42,7 +42,8 @@ export const Route = createRootRoute({
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", href: "/favicon.ico" },
+      { rel: "icon", type: "image/png", sizes: "192x192", href: "/favicon-192.png" },
+      { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
       {
         rel: "preconnect",
         href: "https://fonts.googleapis.com",

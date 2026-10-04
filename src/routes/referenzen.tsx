@@ -10,7 +10,7 @@ const fmt = new Intl.NumberFormat("de-DE");
 export const Route = createFileRoute("/referenzen")({
   head: () => ({
     meta: [
-      { title: "Referenzen – Stefan Maaß Solaranlagen SMS" },
+      { title: "Referenzen – SMS" },
       {
         name: "description",
         content:

@@ -13,7 +13,7 @@ import { projects } from "@/data/projects";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Stefan Maaß Solaranlagen SMS – Gewerbliche Photovoltaik-Großanlagen" },
+      { title: "SMS – Gewerbliche Photovoltaik-Großanlagen" },
       {
         name: "description",
         content:

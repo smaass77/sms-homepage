@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/kontakt")({
   head: () => ({
     meta: [
-      { title: "Kontakt – Stefan Maaß Solaranlagen SMS" },
+      { title: "Kontakt – SMS" },
       {
         name: "description",
         content:

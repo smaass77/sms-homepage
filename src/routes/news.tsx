@@ -5,7 +5,7 @@ import { news } from "@/data/news";
 export const Route = createFileRoute("/news")({
   head: () => ({
     meta: [
-      { title: "News – Stefan Maaß Solaranlagen SMS" },
+      { title: "News – SMS" },
       {
         name: "description",
         content:
